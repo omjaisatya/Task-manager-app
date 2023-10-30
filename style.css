@@ -1,9 +1,3 @@
-html {
-  height: 100%;
-  width: 100%;
-}
-
-
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -23,7 +17,9 @@ h1 {
   font-size: 24px;
 }
 
-input[type="text"] {
+input[type="text"],
+select,
+input[type="date"] {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -57,23 +53,17 @@ button {
   color: #aaa;
 }
 
-button.delete {
+button.delete,
+button.edit,
+button.complete {
   background-color: #e74c3c;
   color: #fff;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
-button.edit {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-button.edit:hover {
-  background-color: #2980b9;
+button.complete {
+  background-color: #27ae60;
 }
